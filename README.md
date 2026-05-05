@@ -1,73 +1,83 @@
-# React + TypeScript + Vite
+# boilerplate-vite-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto React + Vite desenvolvido para praticar a criação e reutilização de componentes em uma aplicação simples.
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A aplicação é composta por um componente principal e por componentes secundários reutilizáveis, organizados para demonstrar uma estrutura básica de React com TypeScript. A tela inicial reúne navegação, seção principal, cards de funcionalidades e rodapé.
 
-## React Compiler
+## Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
+## Estrutura do projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── assets/
+├── components/
+│   ├── featureSection/
+│   │   └── cardFeature/
+│   │       └── CardFeatures.tsx
+│   ├── footer/
+│   │   └── Footer.tsx
+│   └── navbar/
+│       └── Navbar.tsx
+├── models/
+│   └── FeatureSection.ts
+├── pages/
+│   └── home/
+│       └── Home.tsx
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como executar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Instale as dependências:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+2. Inicie o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+3. Abra o endereço exibido no terminal no navegador.
+
+## Componentes principais
+
+- `App.tsx`: componente principal da aplicação
+- `Navbar.tsx`: cabeçalho com navegação
+- `Home.tsx`: página inicial com a seção principal
+- `CardFeatures.tsx`: cards com os recursos destacados
+- `Footer.tsx`: rodapé da aplicação
+
+## Entrega solicitada
+
+Para enviar a atividade, inclua:
+
+- Print de tela do resultado obtido
+- Print do componente principal mostrando a chamada para o novo componente
+- Link do repositório público no GitHub ou a pasta compartilhada no Google Drive
+
+## Espaço para screenshots
+
+### Resultado da aplicação
+
+Inserir aqui o print da tela final da aplicação.
+
+### Componente principal
+
+Inserir aqui o print do arquivo principal exibindo a chamada do componente.
+
+## Observação
+
+Se quiser, você pode expandir o layout com novos estilos, textos ou funcionalidades antes de realizar a entrega.
