@@ -22,15 +22,15 @@ export default function Navbar() {
             <nav className="flex items-center gap-1 text-sm text-zinc-500">
                 <Link
                     to="#features"
-                    className="relative px-4 py-2 rounded-lg
-                            hover:text-zinc-100 hover:bg-white/5
+                    className="relative px-4 py-2 rounded-lg text-white
+                            hover:text-white hover:bg-white/5
                             transition-all duration-200">
                     Features
                 </Link>
                 <Link
                     to="#sobre"
-                    className="relative px-4 py-2 rounded-lg
-                                hover:text-zinc-100 hover:bg-white/5
+                    className="relative px-4 py-2 rounded-lg text-white
+                                hover:text-white hover:bg-white/5
                                 transition-all duration-200">
                     Sobre
                 </Link>
