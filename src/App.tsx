@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 export default function App() {
   return (
@@ -7,9 +8,11 @@ export default function App() {
       <header>
         <Navbar />
       </header>
+
       <main className="bg-black min-h-screen flex-1 flex flex-col">
       
       </main>
+      <Footer />
     </BrowserRouter>
   );
 };
