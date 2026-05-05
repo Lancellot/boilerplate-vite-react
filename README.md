@@ -72,11 +72,12 @@ Para enviar a atividade, inclua:
 
 ### Resultado da aplicação
 
-Inserir aqui o print da tela final da aplicação.
+<img width="1618" height="700" alt="Captura de tela 2026-05-05 163716" src="https://github.com/user-attachments/assets/395f5a6f-e0e1-49fc-bb18-4c2d6063c6a6" />
 
 ### Componente principal
 
-Inserir aqui o print do arquivo principal exibindo a chamada do componente.
+<img width="642" height="404" alt="Captura de tela 2026-05-05 164007" src="https://github.com/user-attachments/assets/86692bd9-510a-4bc5-9a5e-74f1cc758161" />
+
 
 ## Observação
 
